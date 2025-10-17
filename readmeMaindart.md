@@ -1,6 +1,6 @@
 
 
-## 🧭 **How to Start the Explanation**
+## 🧭 ** Explanation**
 
 > “Now let’s look at the `main.dart` file — this is the starting point of every Flutter app.
 > It controls which screen is shown first and how all other widgets (like our custom widgets and themes) come together.”
@@ -48,7 +48,7 @@ For example:
 * `ex7/form.dart` → contains code for **forms and validation**
 * and so on…”
 
-🧩 **Tip for students:** This is how large apps are organized — by separating code into multiple files for clarity.
+🧩 **Tip:** This is how large apps are organized — by separating code into multiple files for clarity.
 
 ---
 
