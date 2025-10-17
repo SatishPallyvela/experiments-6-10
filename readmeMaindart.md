@@ -1,8 +1,4 @@
-Yes ✅ — you **should definitely explain the `main.dart` file**, especially because it is the **entry point of the app** and it connects your experiment files like **6a (Custom Widgets)** and **6b (Themes)** together.
 
-Here’s how you can **explain `main.dart` step-by-step to your students** — line by line, in a simple, teaching-friendly way.
-
----
 
 ## 🧭 **How to Start the Explanation**
 
