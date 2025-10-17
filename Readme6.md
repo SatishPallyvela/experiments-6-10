@@ -14,7 +14,7 @@
 import 'package:flutter/material.dart';
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This line imports the Flutter Material package, which gives us access to ready-made UI components like `Card`, `Text`, and `Padding`. Without this, we can’t use Flutter’s visual widgets.”
 
 ---
@@ -23,7 +23,7 @@ import 'package:flutter/material.dart';
 class CustomCard extends StatelessWidget {
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “We are creating a new class called `CustomCard`.
 It extends `StatelessWidget`, meaning it doesn’t change once it’s built. It’s used for static content.”
 
@@ -34,7 +34,7 @@ final String title;
 final String? subtitle;
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “These are **properties** of our widget.
 
 * `title` is required and will always have a value.
@@ -47,7 +47,7 @@ final String? subtitle;
 const CustomCard({super.key, required this.title, this.subtitle});
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This is the **constructor** of the widget.
 It allows us to pass values when creating the widget — for example:
 `CustomCard(title: 'Student Info', subtitle: 'Roll No: 21CS101')`.”
@@ -59,7 +59,7 @@ It allows us to pass values when creating the widget — for example:
 Widget build(BuildContext context) {
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “Every widget in Flutter has a `build` method.
 It returns the UI layout that will appear on the screen.”
 
@@ -70,7 +70,7 @@ return Card(
   margin: const EdgeInsets.all(12),
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “Here we’re returning a **Card widget** — a container with rounded corners and shadow.
 `margin` adds space around the card so it doesn’t touch the screen edges.”
 
@@ -81,7 +81,7 @@ child: Padding(
   padding: const EdgeInsets.all(16),
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “`Padding` adds inner space inside the card, so the text doesn’t stick to the edges.”
 
 ---
@@ -92,7 +92,7 @@ child: Column(
   children: [
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “A `Column` arranges widgets **vertically**.
 `crossAxisAlignment.start` aligns them to the left side.”
 
@@ -102,7 +102,7 @@ child: Column(
 Text(title, style: Theme.of(context).textTheme.titleLarge),
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This displays the **title text**.
 It uses the app’s **theme style** — so if we change the theme color or font, this text updates automatically.”
 
@@ -115,7 +115,7 @@ if (subtitle != null) ...[
 ]
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This checks if a subtitle was given.
 If yes, it adds some space (`SizedBox`) and then shows the subtitle text.
 The `...` syntax is used to insert a list of widgets conditionally.”
@@ -128,7 +128,7 @@ The `...` syntax is used to insert a list of widgets conditionally.”
 class CustomAvatar extends StatelessWidget {
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This defines another widget, `CustomAvatar`, also a `StatelessWidget`.
 It will display a circular profile with initials.”
 
@@ -139,7 +139,7 @@ final String name;
 final double size;
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “`name` is required, and `size` controls how big the circle will be.
 We can adjust `size` when using this widget.”
 
@@ -149,7 +149,7 @@ We can adjust `size` when using this widget.”
 const CustomAvatar({super.key, required this.name, this.size = 48});
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “The constructor lets us pass the name and optional size.
 If we don’t give a size, it defaults to 48.”
 
@@ -167,7 +167,7 @@ final initials = name.trim().isEmpty
         .join();
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This logic extracts the **initials** from the name.
 For example, ‘Satish Bhasker’ → `SB`.
 If the name is empty, it shows a question mark (`?`).”
@@ -182,7 +182,7 @@ return CircleAvatar(
 );
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “`CircleAvatar` creates a circular icon.
 It displays the initials inside, styled with bold text.
 The size is calculated dynamically using the `size` property.”
@@ -202,7 +202,7 @@ theme: ThemeData(
 ),
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “This is where we define **global app styling** using a Theme.
 
 * `primarySwatch` sets the main app color.
@@ -221,7 +221,7 @@ CustomAvatar(name: "Satish Bhasker"),
 CustomCard(title: "Flutter Lab", subtitle: "Custom Widgets and Themes"),
 ```
 
-🗣 **Explain:**
+🗣 **notes:**
 “Here we are using our custom widgets.
 They’ll appear styled according to the app theme.
 This shows the power of reusability — we can use these widgets anywhere easily.”
@@ -237,10 +237,6 @@ This shows the power of reusability — we can use these widgets anywhere easily
 > * How widgets inherit styles from the app’s theme automatically.
 >   This helps build clean, modular, and visually consistent Flutter apps.”
 
----
-
-Would you like me to make this into a **spoken script** (like what exactly to say while showing code line-by-line in class)?
-That version would be very natural and teacher-friendly for oral explanation.
 
 <!-- Desktop View -->
 ![alt text](image-1.png) 
