@@ -235,7 +235,4 @@ Then line-by-line:
 3. Next, explain how **“Each experiment is loaded”** → `pages[]` list.
 4. Finally, show how **navigation** works using the `BottomNavigationBar`.
 
----
 
-Would you like me to create a **teacher presentation script** for this (with exact sentences to say while showing code in class + what to highlight on screen)?
-It can help you explain naturally while teaching each section.
